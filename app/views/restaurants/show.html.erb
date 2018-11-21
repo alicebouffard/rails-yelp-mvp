@@ -1,0 +1,9 @@
+<h1><%= @restaurant.name %> detailed view</h1>
+
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.content %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Back to list", restaurants_path, class: "btn btn-primary"%>
